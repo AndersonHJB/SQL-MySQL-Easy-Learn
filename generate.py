@@ -27,7 +27,7 @@ SQL/MySQL 零基础从入门到精通
 
 def generate_path():
     BASE = "https://github.aiyc.top/SQL-MySQL-Easy-Learn/"
-    target = ["mp4", ]
+    target = ["mp4", "ts"]
     result = []
     for root, _, filenames in os.walk("."):
         for name in filenames:
@@ -40,6 +40,7 @@ def generate_path():
             yield url
 
 if __name__ == '__main__':
-    r = generate_path()
-    for i in r:
-        print(i)
+    url = generate_path()
+    # for i in r:
+    #     print(i)
+    save(url)
