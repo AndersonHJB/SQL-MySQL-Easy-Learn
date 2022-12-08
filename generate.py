@@ -45,3 +45,4 @@ if __name__ == '__main__':
     # for i in r:
     #     print(i)
     save(url)
+    print("生成成功！继续上传，同步。")
