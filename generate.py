@@ -20,7 +20,7 @@ SQL/MySQL 零基础从入门到精通
 """
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(html)
-        for url in urls:
+        for url in sorted(urls):
             content = code.format(url)
             f.write(content + "\n")
 
