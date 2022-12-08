@@ -39,6 +39,7 @@ def generate_path():
             url = TEMPLATE.format(url=url)
             yield url
 
+
 if __name__ == '__main__':
     url = generate_path()
     # for i in r:
